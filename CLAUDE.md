@@ -68,3 +68,21 @@ El demo es para: pitch a inversionistas y captura de primeros pilotos pagos.
 - Categoria: F&B / Cafe especialidad
 - Ticket promedio: 48000 COP
 - Audiencia: 22-38, urbana, profesional
+
+## Referencias de diseño visual
+
+Existen dos archivos HTML en la carpeta `_design/` que definen la estetica
+exacta del producto. SIEMPRE consultalos antes de construir cualquier UI:
+
+- `_design/kairos-mvp-demo.html` — demo navegable con la estetica exacta
+  del producto. Estructura de pantallas (dashboard, campaign builder,
+  match results, drawer, brief generator), colores, tipografias,
+  animaciones, densidad. ESTA ES LA REFERENCIA VISUAL CANONICA.
+
+- `_design/kairos-founder-document.html` — direccion de marca, tono,
+  personalidad, sistema visual. Referencia conceptual.
+
+Cuando construyas componentes React, lee primero la seccion relevante del
+mvp-demo.html y replica la estetica usando shadcn/ui + Tailwind. No
+inventes estilos propios. No uses gradientes morados. Usa lima electrico
+(#e8ff34) como acento principal.
